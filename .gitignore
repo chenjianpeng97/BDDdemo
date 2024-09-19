@@ -1,3 +1,5 @@
 /.bdddemo/
 /.idea/
 .gitigonre
+.pyc
+__pycache__/
