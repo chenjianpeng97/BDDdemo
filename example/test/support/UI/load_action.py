@@ -18,13 +18,12 @@ class LoadActions:
 
     def load_actionwords(self, step):
         """
-        根据动态步骤名加载对应关键词
-        :param step: obj
+        加载step文件中的action方法
+        :param step:
         :return:
         """
         if "Login" in step.name:
-            loginaction = (
-                getattr(importlib.import_module("test.support.UI.actionwords.login_action"), "LoginAction"))
+            loginaction = getattr(importlib.import_module("test.integration.actionwords.login_action"), "LoginAction")
 
             return loginaction(self.context)
 

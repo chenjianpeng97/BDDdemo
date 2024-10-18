@@ -12,10 +12,9 @@
 from page_objects import PageObject, PageElement
 
 
-class LoginPage(PageObject):
+class AccountPage(PageObject):
     # 定义页面元素，经销商信息列表中经销商名称list
-    username_field = PageElement(id_='username')
-    password_field = PageElement(id_='password')
+    dealer_name_list = PageElement(id_='id_dealer_name_li')
     #
 
 
